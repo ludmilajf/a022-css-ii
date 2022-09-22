@@ -1,24 +1,48 @@
+body {
+  background-color: gainsboro;
+}
+
 header{
     border-bottom: 1px solid black;
+    text-align: center;
   }
   
   main{
     width: 800px;
+    margin: 0 auto;
+    height: 800px;
   }
-  
+
   aside{
     width: 180px;
     border: 1px solid black;
+    background-color: gainsboro;
+    border-radius: 0.2cm;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    text-align: center;
   }
   
   footer{
     background-color: black;
-    color: white;
+    color: gainsboro;
     width: 100%;
+    position: sticky;
+    bottom: 0;
   }
   
   button{
     background-color: black;
-    color: white;
+    color: gainsboro;
     font-family: serif;
+    margin: 10px;
+  }
+
+  aside:has(button:active) {
+    filter: invert(100%);
+  }
+
+  section {
+    text-align: justify;
   }
